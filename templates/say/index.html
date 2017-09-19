@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TalkTree</title>
+</head>
+<body>
+<h1>测试列表</h1>
+<ul>
+    {#遍历测试列表#}
+    {%for date in testlist%}
+    <li>
+     {#输出图书名称，并设置超链接，链接地址是一个数字#}
+      <a href="{{date.id}}">{{date.title}},{{ date.ttpub_date }}</a>
+    </li>
+    {%endfor%}
+</ul>
+</body>
+</html>
